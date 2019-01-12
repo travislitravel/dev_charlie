@@ -6,9 +6,8 @@ This is ground zero for the repository for the development of TravisLi Luxury Tr
 **Project Type**: WordPress, Angular        
 **Version**: 1.0.0 as of Nov 15th, 2018            
 **Author**: Steve Berry, me@elwoodberry.com           
-**Description**: TravisLi Luxury Travel Design.                  
-**Theme Files**: [Learn More About](https://github.com/travislitravel/wp_theme_travisli/tree/master/public) WordPress Theme Files         
+**Description**: TravisLi Luxury Travel Design.                          
 **Source Files**: [Learn More About](https://github.com/travislitravel/wp_theme_travisli/tree/master/src) Source Files      
-**Work Log**: [Learn More About](https://github.com/travislitravel/wp_theme_travisli/tree/master/src) Work Log      
+**Work Log**: [Learn More About](https://github.com/travislitravel/dev_charlie/blob/master/src/docs/work_log.md) Work Log      
 
 ---  
