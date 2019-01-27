@@ -1,0 +1,48 @@
+.carousel-img {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+  margin-bottom: 0;
+  height: inherit;
+  background-color: transparent;
+}
+
+.col {
+  height: inherit;
+  background-color: transparent;
+  padding-top: 200px;
+}
+
+//
+#carousel_one{
+  background-image: url('../../../assets/img/places__04.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: left;
+  padding: 250px 0 0 0;
+
+  #carousel_titlebar{
+    background-color: rgba(166, 182, 23, 0.74);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 115px;
+    color: #FFF;
+    padding: 15px 0 0 0;
+
+    h2{
+      font-weight: 100;
+    }
+    small {
+      font-size: 14px;
+      font-weight: 100;
+    }
+  }
+}
+#carousel_two{
+  background-image: url('../../../assets/img/venice_2017__blck_n_wht.jpg');
+}

@@ -1,0 +1,23 @@
+// IMPORTS
+@import "../../sass/variables"; // Variables
+
+//
+#brand_display {
+  background-color: transparent;
+  height: 100px;
+  padding: 20px 0 0 0;
+  text-align: center;
+
+  span {
+    color: $gold_dark;
+    font-size: 40px;
+    display: block;
+  }
+  small {
+    font-size: 12px;
+    font-weight: 100;
+    color: $light_grey;
+    position: relative;
+    top: -15px;
+  }
+}

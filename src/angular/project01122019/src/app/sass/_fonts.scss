@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'travisli';
+  src:  url('./assets/fonts/travisli.eot?338eec');
+  src:  url('./assets/fonts/travisli.eot?338eec#iefix') format('embedded-opentype'),
+    url('./assets/fonts/travisli.ttf?338eec') format('truetype'),
+    url('./assets/fonts/travisli.woff?338eec') format('woff'),
+    url('./assets/fonts/travisli.svg?338eec#travisli') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'travisli' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-font_brand:before {
+  content: "\e900";
+}

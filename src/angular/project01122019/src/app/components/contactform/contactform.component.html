@@ -1,0 +1,138 @@
+<!--
+CONTACT FORM : TRAVISLI
+-->
+<div class="container">
+
+  <div class="">{{message}}</div>
+
+  <form (ngSubmit)="processForm()">
+
+    <div class="row">
+      <!-- FIRST NAME -->
+      <div class="input-field col s6">
+
+        <input
+        #first_nameInput="ngModel"
+        [(ngModel)]="first_name"
+        class="validate"
+        id="first_name"
+        minlength="3"
+        name="first_name"
+        placeholder="Your first name."
+        required
+        type="text">
+
+        <label for="first_name">First Name</label>
+
+        <div class="form_error" *ngIf="first_nameInput.invalid && first_nameInput.dirty">Your first name is required.</div>
+
+      </div>
+
+      <!-- LAST NAME -->
+      <div class="input-field col s6">
+
+        <input
+        #last_nameInput="ngModel"
+        [(ngModel)]="last_name"
+        class="validate"
+        id="last_name"
+        minlength="3"
+        name="last_name"
+        placeholder="Your last name."
+        required
+        type="text">
+
+        <label for="last_name">Last Name</label>
+
+        <div class="form_error"  *ngIf="last_nameInput.invalid && last_nameInput.dirty">Your last name is required.</div>
+
+      </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="row">
+      <div class="input-field col s12">
+
+        <input
+        #emailInput="ngModel"
+        [(ngModel)]="email"
+        class="validate"
+        id="email"
+        minlength="3"
+        name="email"
+        placeholder="Your email."
+        required
+        type="email">
+
+        <label for="email">Email</label>
+
+        <div class="form_error"  *ngIf="emailInput.invalid && emailInput.dirty">A valid email is required.</div>
+
+      </div>
+    </div>
+
+    <!-- PHONE -->
+    <div class="row">
+      <div class="input-field col s12">
+
+        <input
+        #phoneInput="ngModel"
+        [(ngModel)]="phone"
+        class="validate"
+        id="phone"
+        minlength="3"
+        name="phone"
+        placeholder="Your mobile number"
+        required
+        type="tel">
+
+        <label for="phone">Phone</label>
+
+        <div class="form_error" *ngIf="phoneInput.invalid && phoneInput.dirty">A valid phone is required.</div>
+
+      </div>
+    </div>
+
+    <!-- COMPANY -->
+    <div class="row">
+      <div class="input-field col s12">
+
+        <input
+        #companyInput="ngModel"
+        [(ngModel)]="company"
+        class="validate"
+        id="company"
+        minlength="3"
+        name="company"
+        placeholder="The company you are with. Not required."
+        required
+        type="text">
+
+        <label for="phone">Company</label>
+
+        <div class="form_error" *ngIf="companyInput.invalid && companyInput.dirty">A valid company is required.</div>
+
+      </div>
+    </div>
+
+    <!-- MILES -->
+    <div class="row">
+      <div class="input-field col s12">
+        <select [(ngModel)]="default_traveler" name="miles" id="miles">
+          <option *ngFor="let person of traveler" [value]="person.first_name">{{person.first_name}} {{person.last_name}}</option>
+        </select>
+        <div class="">
+          {{default_traveler}}
+        </div>
+      </div>
+    </div>
+
+    <!-- TYPE -->
+    <div class="row">
+      <div class="input-field col s12">
+      </div>
+    </div>
+
+    <button type="submit" class="submit_btn waves-effect waves-light btn-large">Contact Me!</button>
+  </form>
+</div><!-- [end] 'container' -->

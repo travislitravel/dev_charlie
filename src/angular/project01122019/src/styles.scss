@@ -1,0 +1,24 @@
+
+/*
+TRAVISLI
+*/
+
+@import "./assets/css/materialize.min.css"; // 1. Materialize - https://materializecss.com/
+@import "./app/sass/variables"; // Variables
+@import "./app/sass/fonts"; // Fonts
+
+body {
+  padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+section {
+  height: min-content;
+  padding: 15px 0;
+
+  &:nth-child(even){
+    background-color: $gold_light_20;
+  }
+}
